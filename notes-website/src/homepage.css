@@ -1,0 +1,161 @@
+/* ===============================
+   GLOBAL RESET
+================================ */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===============================
+   HEADER SECTION
+================================ */
+.Header {
+    position: relative;
+    width: 100%;
+    height: 450px;
+
+    background-image: url('./assets/homepageicons/crop-shot-students-table.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+/* Dark overlay on header image */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Content above overlay */
+.Header h1,
+.Header input,
+.Header .user-selection {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===============================
+   HEADER CONTENT
+================================ */
+.mainheading {
+    font-size: clamp(40px, 6vw, 70px);
+    margin-bottom: 120px;
+}
+
+.user-search {
+    width: min(450px, 90%);
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 20px;
+
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.user-search::placeholder {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* ===============================
+   DROPDOWNS
+================================ */
+.user-selection {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.Subject-Selection select,
+.Grade-Selection select {
+    padding: 10px 15px;
+    font-size: 16px;
+
+    border-radius: 8px;
+    border: 1px solid #00000056;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Subject-Selection select:hover,
+.Grade-Selection select:hover {
+    border-color: #888;
+}
+
+/* ===============================
+   NOTES GRID
+================================ */
+.NotesGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 24px;
+    padding: 40px 20px;
+}
+
+/* ===============================
+   NOTE CARD
+================================ */
+.note-card {
+    width: 200px;
+    cursor: pointer;
+
+    transition: transform 0.25s cubic-bezier(.4,0,.2,1),
+                box-shadow 0.25s cubic-bezier(.4,0,.2,1);
+}
+
+.note-card img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+}
+
+.note-card h1 {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Hover pop effect */
+.note-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* ===============================
+   MOBILE OPTIMIZATION
+================================ */
+@media (max-width: 480px) {
+    .Header {
+        height: 380px;
+    }
+
+    .mainheading {
+        margin-bottom: 80px;
+    }
+
+    .note-card {
+        width: 160px;
+    }
+}
+
+/* Safety net: prevent side scrolling */
+body {
+    overflow-x: hidden;
+}
