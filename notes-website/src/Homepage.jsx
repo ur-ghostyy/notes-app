@@ -6,7 +6,7 @@ import mathsCover from './assets/covers/mathsCover.jfif'
 import physicsCover from './assets/covers/physicsCover.jfif'
 import csCover from './assets/covers/csCover.png'
 
-import physicsChap7Xi from './assets/physicsNotes/physicsChapter7.pdf'
+import physicsChap7Xi from './assets/physicsNotes/physicschapter7.pdf'
 import physicsChap8Xi from './assets/physicsNotes/phys8.pdf'
 import physicsChap9Xi from './assets/physicsNotes/phys9.pdf'
 
