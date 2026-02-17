@@ -18,6 +18,7 @@ import csChap4 from './assets/csNotes/cs4.pdf'
 import csChap5 from './assets/csNotes/cs5.pdf'
 import csChap6 from './assets/csNotes/cs6.pdf'
 import csChap7 from './assets/csNotes/cs7.pdf'
+import csMp1 from './assets/modelPapers/csMP1.pdf'
 
 function HomePage() {
 
@@ -92,6 +93,15 @@ function HomePage() {
       pdfUrl: csChap7,
       coverImg: csCover
     }
+    ,
+    {
+      title: "Computer Model Paper",
+      subject: "computer",
+      grade: "xi",
+      pdfUrl: csMp1,
+      coverImg: csCover
+    }
+    
   ])
 
   const [search, setSearch] = useState('')
