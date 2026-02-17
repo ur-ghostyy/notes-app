@@ -144,6 +144,7 @@ function HomePage() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
+          <p>All the recources in our site are legally consumed and are authorized &copy;</p>
         </div>
 
         {/* Filters */}
